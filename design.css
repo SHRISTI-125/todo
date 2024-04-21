@@ -1,0 +1,109 @@
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+#para1 img{
+    width: 300px;
+}
+.para1{
+    background: linear-gradient( rgb(66, 160, 248) pink);
+    padding: 30px 30px 30px 30px;
+    background-color: transparent;
+    width: 100%;
+    margin: 10px;
+}
+.write{
+    background-color: rgb(234, 246, 250);
+}
+#new{
+    margin: 34px;
+    display: flex;
+}
+#new .para1{
+    padding: 10px 10px 0px 6px;
+    margin: 3px 6px;
+    border-radius: 4px;
+}
+
+#new .para1 img{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+
+.new{
+    display: flex;
+}
+.ul{
+    margin: 0px;
+    padding: 0px;
+}
+.ul{
+    list-style: armenian;
+}
+
+input {
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 15px;
+}
+
+.ul li{
+    position: relative;
+    padding: 12px 8px 12px 8px;
+    font-size: 18px;
+}
+
+ul li:nth-child(odd){
+    background: #4bfb56;
+}
+
+ul li.checked:nth-child(odd) {
+    background: #016836;
+    color: #fff;
+    text-decoration:line-through;
+}
+
+
+ul li:nth-child(even){
+    background: #f2f755;
+}
+
+ul li.checked:nth-child(even) {
+    background: #f34797;
+    color: #501303;
+    text-decoration:line-through;
+}
+
+#list{
+    cursor:pointer;
+}
+
+
+.Button{
+    font-size: large;
+    text-align: center;
+    cursor:cell;
+    border-radius: 50%;
+    box-shadow: black;
+    background-color: #f999e3;
+}
+.Button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.close {
+    position: absolute;
+    padding: 10px 12px 10px 12px;
+}
+    
+.close:hover {
+    background-color: #f436ae;
+    color: rgb(251, 244, 248);
+}

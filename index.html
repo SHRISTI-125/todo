@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link href="design.css" rel="stylesheet" type="text/css"/>
+</head>
+<style>
+    body{
+        background-image: url("img/bg1.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 50% 100%;
+    }
+    .anime{
+        animation: blinker 2.5s linear infinite;
+    }
+    .word::before{ 
+            content: "Write the Task"; 
+            animation: anim infinite 5s; 
+            padding-left: 10px; 
+    } 
+  
+    @keyframes anim{ 
+        0%{ 
+            content: "Write the Task"; 
+        } 
+        50%{ 
+            content: "Follow the Schedule"; 
+        } 
+        60%{ 
+            content: "Write the Task"; 
+        } 
+    }
+    @keyframes blinker{
+      50%{
+        opacity: 0;
+        color: rgb(98, 2, 172);
+      }
+    }
+</style>
+<body>
+    <section id="id1">
+        <div id="new">
+            <div class="para1">
+                <h1 class="anime"><b><center><h1 class="word"></h1></center></b></h1>
+            </div>
+            <div class="para1">
+                <div class="write">
+                    <h2>To do List</h2>
+                    <input type="text" id="input-box" placeholder="Write task to add in the list...">
+                    <span onclick="add_task()" class="Button"><b>ADD</b></span>
+                    <ul id="list"></ul>
+                </div>
+            </div>
+        </div>
+        <script src="code.js"></script>
+    </section>
+</body>
+</html>
